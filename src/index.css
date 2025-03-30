@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Open Sans', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-tricolor-saffron text-white px-4 py-2 rounded-md hover:bg-saffron-600 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-tricolor-blue text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity duration-200;
+  }
+  
+  .section-heading {
+    @apply text-3xl font-bold text-gray-900 mb-6;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-tricolor-saffron via-white to-tricolor-green;
+  }
+  
+  .hero-section {
+    @apply relative isolate overflow-hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
+  }
+  
+  .input-field {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-tricolor-blue focus:ring focus:ring-tricolor-blue focus:ring-opacity-50;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Tricolor gradient border */
+.tricolor-border {
+  position: relative;
+}
+
+.tricolor-border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #FF9933 33%, #FFFFFF 33% 66%, #138808 66%);
+}
