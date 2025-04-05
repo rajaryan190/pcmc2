@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from './components/Layout';
+import WhatsappFloatButton from "./components/WhatsappFloatButton";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
@@ -8,6 +9,8 @@ import Services from "./Services";
 import Getstarted from "./Getstarted";
 import Blog from "./Blog";
 import BlogDetail from "./components/BlogDetail";
+
+
 
 
 function App() {
@@ -25,6 +28,11 @@ function App() {
                 <Route path="/blog/:slug" element={<BlogDetail />} />
                 </Route>
             </Routes>
+            {/* <WhatsappFloatButton /> */}
+            {/* Add any other components that should be displayed on all pages here */}
+            <div className="fixed bottom-4 right-4">
+                <WhatsappFloatButton />
+            </div>
         </Router>
     );
 }

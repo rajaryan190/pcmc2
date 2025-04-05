@@ -16,6 +16,18 @@ const blogPosts = [
     category: "Politics",
   },
   // More posts...
+  {
+    id: 2,
+    title: "What is Waqf Sanshodhan Bill?",
+    excerpt: "Exploring how social media platforms influence political discourse.",
+    content: "Full blog content here...",
+    author: "Ayesha Khan",
+    date: "April 6, 2025",
+    readTime: "5 min read",
+    slug: "what-is-waqf-sanshodhan-bill",
+    imageUrl: "/what-is-waqf-sanshodhan-bill.jpg",
+    category: "Politics",
+  },
 ];
 
 export default function BlogSection() {

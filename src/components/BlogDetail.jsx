@@ -66,6 +66,63 @@ const blogPosts = [
     readTime: "6 min read",
     slug: "why-bihar-politics-is-interesting",
     imageUrl: "/why-bihar-politics-is-interesting.jpeg",
+  },
+
+  {
+    id: 2,
+    title: "What is Waqf Sanshodhan Bill?",
+    content: `
+      <h2>What is Waqf Sanshodhan Bill: Understanding Its Implications</h2>
+      <p>
+        The Waqf Sanshodhan Bill has been a topic of significant discussion in recent times. This bill aims to bring 
+        changes to the existing Waqf Act, which governs the administration and management of Waqf properties in India. 
+        But what exactly does this bill propose, and why is it important? Let’s delve into the details.
+      </p>
+
+      <h3>1. What is Waqf?</h3>
+      <p>
+        Waqf refers to a charitable endowment under Islamic law, where a property or asset is dedicated for religious 
+        or charitable purposes. These properties are managed by Waqf boards, which are statutory bodies established 
+        under the Waqf Act.
+      </p>
+
+      <h3>2. Key Provisions of the Waqf Sanshodhan Bill</h3>
+      <p>
+        The Waqf Sanshodhan Bill introduces several amendments to streamline the management of Waqf properties. Some 
+        of the key provisions include:
+      </p>
+      <ul>
+        <li>Strengthening the powers of Waqf boards to ensure better governance.</li>
+        <li>Introducing stricter penalties for misuse or illegal occupation of Waqf properties.</li>
+        <li>Enhancing transparency in the registration and management of Waqf assets.</li>
+      </ul>
+
+      <h3>3. Controversies Surrounding the Bill</h3>
+      <p>
+        While the bill aims to improve the administration of Waqf properties, it has also faced criticism from various 
+        quarters. Some argue that the bill could lead to excessive government control over Waqf boards, potentially 
+        undermining their autonomy.
+      </p>
+
+      <h3>4. The Importance of the Bill</h3>
+      <p>
+        The Waqf Sanshodhan Bill is crucial for ensuring that Waqf properties are used for their intended purposes. 
+        By addressing issues like mismanagement and illegal encroachments, the bill seeks to protect the interests of 
+        the community and promote social welfare.
+      </p>
+
+      <h2>Conclusion: A Step Towards Better Governance</h2>
+      <p>
+        The Waqf Sanshodhan Bill represents an important step towards improving the governance of Waqf properties in 
+        India. While it has its share of challenges, the bill has the potential to bring about positive changes if 
+        implemented effectively.
+      </p>
+    `,
+    author: "Ayesha Khan",
+    date: "April 6, 2025",
+    readTime: "5 min read",
+    slug: "what-is-waqf-sanshodhan-bill",
+    imageUrl: "/what-is-waqf-sanshodhan-bill.jpg",
   }
 ];
 

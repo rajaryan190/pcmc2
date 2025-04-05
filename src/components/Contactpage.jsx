@@ -10,16 +10,41 @@ export default function Contact() {
     message: ''
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+  const [result, setResult] = useState('');
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setResult('Sending...');
+
+    const formDataToSend = new FormData(e.target);
+    formDataToSend.append('access_key', '78d38acd-150e-4229-a549-2bd6ca1b1a08'); // <-- Replace with your Web3Forms Access Key
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formDataToSend,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult('Form Submitted Successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        party: '',
+        message: ''
+      });
+    } else {
+      setResult('Something went wrong. Please try again!');
+    }
   };
 
   return (
@@ -38,9 +63,10 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Contact Information */}
+      {/* Contact Section */}
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+
           {/* Contact Form */}
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Send us a message</h2>
@@ -49,6 +75,7 @@ export default function Contact() {
             </p>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                   Full Name
@@ -56,11 +83,10 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
-                  id="name"
+                  required
                   value={formData.name}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                  required
                 />
               </div>
 
@@ -71,11 +97,10 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  required
                   value={formData.email}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                  required
                 />
               </div>
 
@@ -86,11 +111,10 @@ export default function Contact() {
                 <input
                   type="tel"
                   name="phone"
-                  id="phone"
+                  required
                   value={formData.phone}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                  required
                 />
               </div>
 
@@ -101,7 +125,6 @@ export default function Contact() {
                 <input
                   type="text"
                   name="party"
-                  id="party"
                   value={formData.party}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
@@ -114,12 +137,11 @@ export default function Contact() {
                 </label>
                 <textarea
                   name="message"
-                  id="message"
                   rows="4"
+                  required
                   value={formData.message}
                   onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                  required
                 ></textarea>
               </div>
 
@@ -129,6 +151,8 @@ export default function Contact() {
               >
                 Send Message
               </button>
+
+              {result && <p className="text-green-600 mt-4">{result}</p>}
             </form>
           </div>
 
@@ -141,55 +165,50 @@ export default function Contact() {
 
             <dl className="mt-8 space-y-6">
               <div className="flex gap-x-4">
-                {/* <dt className="flex-none">
-                  <MapPin className="h-7 w-6 text-gray-400" aria-hidden="true" />
-                </dt> */}
-                {/* <dd className="text-base leading-7 text-gray-600">
+                <dt><MapPin className="h-7 w-6 text-gray-400" /></dt>
+                <dd className="text-base leading-7 text-gray-600">
                   123 Democracy Street<br />
                   New Delhi, 110001<br />
                   India
-                </dd> */}
+                </dd>
               </div>
+
               <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <Phone className="h-7 w-6 text-gray-400" aria-hidden="true" />
-                </dt>
+                <dt><Phone className="h-7 w-6 text-gray-400" /></dt>
                 <dd className="text-base leading-7 text-gray-600">
-                  <a href="tel:+911234567890" className="hover:text-blue-600">
-                 +91 9204791109
+                  <a href="tel:+919204791109" className="hover:text-blue-600">
+                    +91 9204791109
                   </a>
                 </dd>
               </div>
+
               <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <Mail className="h-7 w-6 text-gray-400" aria-hidden="true" />
-                </dt>
+                <dt><Mail className="h-7 w-6 text-gray-400" /></dt>
                 <dd className="text-base leading-7 text-gray-600">
-                  <a href="mailto:contact@politicalpro.com" className="hover:text-blue-600">
+                  <a href="mailto:contact@politicalcampaignmanagementcommittee.com" className="hover:text-blue-600">
                     contact@politicalcampaignmanagementcommittee.com
                   </a>
                 </dd>
               </div>
+
               <div className="flex gap-x-4">
-                {/* <dt className="flex-none">
-                  <MessageSquare className="h-7 w-6 text-gray-400" aria-hidden="true" />
-                </dt>
+                <dt><MessageSquare className="h-7 w-6 text-gray-400" /></dt>
                 <dd className="text-base leading-7 text-gray-600">
-                  <a href="https://wa.me/911234567890" className="hover:text-blue-600">
+                  <a href="https://wa.me/919204791109" className="hover:text-blue-600">
                     Connect on WhatsApp
                   </a>
-                </dd> */}
+                </dd>
               </div>
             </dl>
 
-            {/* Map Placeholder */}
-            {/* <div className="mt-8 rounded-lg bg-gray-100 p-6">
+            <div className="mt-8 rounded-lg bg-gray-100 p-6">
               <h3 className="text-lg font-semibold text-gray-900">Our Location</h3>
               <div className="mt-4 aspect-[4/3] w-full rounded-lg bg-gray-200 text-center text-gray-500 flex items-center justify-center">
                 Interactive Map Coming Soon
               </div>
-            </div> */}
+            </div>
           </div>
+
         </div>
       </div>
     </div>

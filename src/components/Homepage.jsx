@@ -48,6 +48,12 @@ const testimonials = [
     role: "MLA Barbigha",
     imageUrl: "Sudarshan kumar.jpeg"
   },
+  {
+    content: "PoliticalPro's innovative strategies and grassroots approach have been a game-changer for our campaigns. Their expertise in modern political consultancy is unmatched.",
+    author: "Pankaj Kumar Singh",
+    role: "Cabinet Minister, Government of Delhi",
+    imageUrl: "Pankaj Kumar Singh Cabinet Minister, Government of Delhi.jpg"
+  }
 ];
 
 export default function Home() {
