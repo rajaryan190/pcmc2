@@ -37,19 +37,19 @@ const features = [
 
 const testimonials = [
   {
-    content: "PoliticalPro has been instrumental in shaping our campaign strategy with their expertise and dedication. Their innovative approach and deep understanding of voter outreach have made a significant impact.",
+    content: "PCMC has been instrumental in shaping our campaign strategy with their expertise and dedication. Their innovative approach and deep understanding of voter outreach have made a significant impact.",
     author: "Shambhu Sharan Patel ",
     role: "Rajya Sabha Sansad",
     imageUrl: "./Shambhu Sharan Patel.jpg"
   },
   {
-    content: "PoliticalPro's strategic insights and digital expertise have greatly enhanced our outreach. Their commitment and professionalism are truly commendable.",
+    content: "PCMC's strategic insights and digital expertise have greatly enhanced our outreach. Their commitment and professionalism are truly commendable.",
     author: "Sudarshan Kumar",
     role: "MLA Barbigha",
     imageUrl: "Sudarshan kumar.jpeg"
   },
   {
-    content: "PoliticalPro's innovative strategies and grassroots approach have been a game-changer for our campaigns. Their expertise in modern political consultancy is unmatched.",
+    content: "PCMC's innovative strategies and grassroots approach have been a game-changer for our campaigns. Their expertise in modern political consultancy is unmatched.",
     author: "Pankaj Kumar Singh",
     role: "Cabinet Minister, Government of Delhi",
     imageUrl: "Pankaj Kumar Singh Cabinet Minister, Government of Delhi.jpg"
