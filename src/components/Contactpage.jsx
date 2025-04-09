@@ -164,14 +164,14 @@ export default function Contact() {
             </p>
 
             <dl className="mt-8 space-y-6">
-              <div className="flex gap-x-4">
+              {/* <div className="flex gap-x-4">
                 <dt><MapPin className="h-7 w-6 text-gray-400" /></dt>
                 <dd className="text-base leading-7 text-gray-600">
                   123 Democracy Street<br />
                   New Delhi, 110001<br />
                   India
                 </dd>
-              </div>
+              </div> */}
 
               <div className="flex gap-x-4">
                 <dt><Phone className="h-7 w-6 text-gray-400" /></dt>
@@ -201,12 +201,12 @@ export default function Contact() {
               </div>
             </dl>
 
-            <div className="mt-8 rounded-lg bg-gray-100 p-6">
+            {/* <div className="mt-8 rounded-lg bg-gray-100 p-6">
               <h3 className="text-lg font-semibold text-gray-900">Our Location</h3>
               <div className="mt-4 aspect-[4/3] w-full rounded-lg bg-gray-200 text-center text-gray-500 flex items-center justify-center">
                 Interactive Map Coming Soon
               </div>
-            </div>
+            </div> */}
           </div>
 
         </div>

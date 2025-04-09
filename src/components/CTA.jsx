@@ -13,10 +13,12 @@ export default function CTA() {
         </p>
         <div className="mt-8 flex justify-center gap-x-6">
           <Link
-            to="/get-started"
+            to="/contact"
             className="rounded-md bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow hover:bg-blue-50"
+            // onClick={() => window.location.href = '/contact'}
           >
             Get Started
+           
           </Link>
           <Link
             to="/contact"
