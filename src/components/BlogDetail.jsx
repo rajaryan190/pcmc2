@@ -8,7 +8,7 @@ const blogPosts = [
     id: 1,
     title: "Why Bihar Politics is So Interesting?",
     content: `
-      <h2>Why Bihar Politics is So Interesting: A Deep Dive into the Heart of Indian Politics</h2>
+      <h2>Why Bihar Politics is So Interesting?: A Deep Dive into the Heart of Indian Politics</h2>
       <p>
         Bihar, one of India’s most politically dynamic states, has always been at the center of fascinating and 
         unpredictable political drama. The state’s political landscape is full of twists and turns, making it one of 
