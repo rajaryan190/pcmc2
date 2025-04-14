@@ -14,7 +14,7 @@ const services = [
         "Resource allocation strategy",
         "Opposition research and analysis"
       ],
-      image: "/01.jpg" // Add image path
+      image: "/s1.jpeg" // Add image path
     },
     {
       icon: PieChart,
@@ -26,7 +26,7 @@ const services = [
         "Trend prediction models",
         "Real-time polling insights"
       ],
-      image: "/01.jpg" // Add image path
+      image: "/s2.jpeg" // Add image path
     },
     {
       icon: MessageSquare,
@@ -38,7 +38,7 @@ const services = [
         "Content creation & scheduling",
         "Digital advertising campaigns"
       ],
-      image: "/01.jpg" // Add image path
+      image: "/s3.jpeg" // Add image path
     },
     {
       icon: MapPin,
@@ -50,7 +50,7 @@ const services = [
         "Karyakarta training programs",
         "Local event coordination"
       ],
-      image: "/01.jpg" // Add image path
+      image: "/s4.jpeg" // Add image path
     },
     {
       icon: Mic,
@@ -62,7 +62,7 @@ const services = [
         "Crisis management",
         "Press release management"
       ],
-      image: "/01.jpg" // Add image path
+      image: "/s5.jpeg" // Add image path
     },
     {
       icon: Coins,
@@ -74,7 +74,38 @@ const services = [
         "ECI compliance guidance",
         "Financial reporting"
       ],
-      image: "/01.jpg" // Add image path
+      image: "/s6.jpeg" // Add image path
+    }
+    ,
+    {
+      icon: Users,
+      title: "Media Chopal Services",
+      description: "Media Chopal Services blend traditional grassroots gatherings with modern media outreach to create highly engaging, local-level voter interactions. By organizing village-level meetings and leveraging digital platforms to amplify these events, this service helps political campaigns build trust, gather feedback, and deliver personalized messages that resonate with rural and semi-urban voters. It’s a powerful tool to connect candidates directly with the people in a culturally relevant and authentic way.",
+      features: [
+        "Local Chopal Events: Organize village and community-level meetings for direct voter interaction.",
+        "Digital Integration: Live-stream or record sessions for wider reach via social media and messaging platforms.",
+        "Hyper-local Content Creation: Videos, posts, and media content tailored to specific regions and dialects.",
+        "Real-Time Feedback: Collect voter opinions and concerns to refine campaign messaging.",
+        "Trust-Building Approach: Personal, face-to-face communication enhances candidate relatability.",
+        "Amplified Media Reach: Use of WhatsApp, Facebook, YouTube, and local channels to maximize visibility."
+      ],
+      image: "/s7.jpeg" // Add image path
+    },
+    {
+      icon: BarChart3,
+      title: "Election Merchandise Supply",
+      description: "We provide high-quality election merchandise including party flags, badges, T-shirts, banners, caps, and more. From design to delivery, our team ensures every item reflects your party’s identity and supports your campaign on the ground with reliable, customized branding.",
+      features: [
+        "Party Flags & Banners: Custom-designed flags and banners in party colors and symbols.",
+        "Branded T-Shirts & Caps: High-quality apparel for campaign staff and supporters.",
+        "Badges & Stickers: Eye-catching, wearable branding materials for visibility.",
+        "Booth Decoration Kits: Complete sets for booth-level campaigning and promotion.",
+        "Custom Design Support: Logo placement and party branding assistance.",
+        "Bulk Supply & Timely Delivery: Reliable logistics to meet campaign timelines.",
+        "Pan-India Distribution: Service coverage for both urban and rural constituencies.",
+        "Affordable Packages: Cost-effective solutions for all scales of campaign needs."
+      ],
+      image: "/s8.jpeg" // Add image path
     }
   ];
   

@@ -10,7 +10,7 @@ const campaigns = [
       { label: "Social Media Reach", value: "5M+" },
       { label: "Constituencies Won", value: "42" }
     ],
-    image: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/p4.jpg",
     testimonial: {
       quote: "Their data-driven approach and ground strategy made all the difference in our campaign success.",
       author: "Senior Party Leader",
@@ -25,7 +25,7 @@ const campaigns = [
       { label: "Ward Coverage", value: "100%" },
       { label: "Victory Rate", value: "68%" }
     ],
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/MCD.jpg",
     testimonial: {
       quote: "Their understanding of local issues and voter sentiment was exceptional.",
       author: "Municipal Committee Head",
@@ -40,7 +40,7 @@ const campaigns = [
       { label: "Volunteer Network", value: "50K+" },
       { label: "Success Rate", value: "92%" }
     ],
-    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/p1.jpg",
     testimonial: {
       quote: "Their strategic planning and execution capabilities are unmatched in the industry.",
       author: "Campaign Director",
